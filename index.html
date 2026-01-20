@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADSFAMOUS | AR Visiting Card</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    /* Brand intro */
+    .brand {
+      text-align: center;
+      margin-bottom: 15px;
+      animation: glowIn 1.5s ease;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #d4af37;
+      text-shadow: 0 0 15px rgba(212,175,55,0.6);
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    /* Video */
+    .video-wrapper {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid rgba(212,175,55,0.5);
+      box-shadow: 0 0 25px rgba(212,175,55,0.25);
+    }
+
+    iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+    }
+
+    /* Glass card */
+    .card {
+      margin-top: -35px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      animation: slideUp 1s ease;
+    }
+
+    .card h2 {
+      margin: 0;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .card span {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #d4af37;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #000;
+      background: linear-gradient(135deg, #d4af37, #ffeb8a);
+      box-shadow: 0 0 15px rgba(212,175,55,0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(212,175,55,0.9);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes glowIn {
+      from { opacity: 0; text-shadow: none; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Brand -->
+    <div class="brand">
+      <h1>ADSFAMOUS</h1>
+      <p>KERALA</p>
+    </div>
+
+    <!-- Video -->
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/7KJgzFwhi7w?autoplay=1&mute=0&playsinline=1&rel=0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Visiting Card -->
+    <div class="card">
+      <h2>ADSFAMOUS</h2>
+      <span>KERALA</span>
+
+      <div class="info">
+        📞 +91 97473 38597<br>
+        💬 WhatsApp: +91 97473 38597<br>
+        📧 adsfamous@gmail.com<br>
+        🌐 adsfamous.com
+      </div>
+
+      <div class="buttons">
+        <a class="btn" href="tel:+919747338597">Call</a>
+        <a class="btn" href="https://wa.me/919747338597" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://adsfamous.com" target="_blank">Website</a>
+        <a class="btn" href="mailto:adsfamous@gmail.com">Email</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
